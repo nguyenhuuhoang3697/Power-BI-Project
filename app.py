@@ -53,17 +53,6 @@ def main():
       'Total_Relationship_Count	','Total_Amt_Chng_Q4_Q1','Avg_Utilization_Ratio','Credit_Limit','Avg_Open_To_Buy','Months_Inactive_12_mon','Months_on_book','Contacts_Count_12_mon',
       'Dependent_count'])
 
-        category_col =['Income_Category','Education_Level','Marital_Status','Gender','Card_Category']
-        for cat in encoder_dict:
-            for col in df.columns:
-                le = preprocessing.LabelEncoder()
-                if cat == col:
-                    le.classes_ = encoder_dict[cat]
-                    for unique_item in df[col].unique():
-                        if unique_item not in le.classes_:
-                            df[col] = ['Unknown' if x == unique_item else x for x in df[col]]
-                    df[col] = le.transform(df[col])
-
         features_list = df.values.tolist()
         prediction = model.predict(features_list)
 
