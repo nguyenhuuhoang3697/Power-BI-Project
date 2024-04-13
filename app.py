@@ -58,9 +58,6 @@ def main():
                 le = preprocessing.LabelEncoder()
                 if cat == col:
                     le.classes_ = pd.Series(encoder_dict[cat])
-                    for unique_item in df[col].unique():
-                        if unique_item not in le.classes_:
-                            df[col] = ['Unknown' if x == unique_item else x for x in df[col]]
                     df[col] = le.transform(df[col])
 
         features_list = df.values.tolist()
