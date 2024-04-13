@@ -43,7 +43,7 @@ def main():
         features = [[Customer_Age,Income_Category,Education_Level,Marital_Status,Gender,Card_Category,Total_Trans_Ct,Total_Trans_Amt,Total_Revolving_Bal,Total_Ct_Chng_Q4_Q1,
       Total_Relationship_Count,Total_Amt_Chng_Q4_Q1,Avg_Utilization_Ratio,Credit_Limit,Avg_Open_To_Buy,Months_Inactive_12_mon,Months_on_book,Contacts_Count_12_mon,
       Dependent_count]]
-        data = {'Customer_Age': int(Customer_Age), 'Income_Category': Income_Category, 'Education_Level': Education_Level, 'Marital_Status': Marital_Status, 'Gender': Gender,
+        data = {'Customer_Age': Customer_Age, 'Income_Category': Income_Category, 'Education_Level': Education_Level, 'Marital_Status': Marital_Status, 'Gender': Gender,
                 'Card_Category': Card_Category, 'Total_Trans_Ct': int(Total_Trans_Ct), 'Total_Trans_Amt': float(Total_Trans_Amt), 'Total_Revolving_Bal': int(Total_Revolving_Bal),
                 'Total_Ct_Chng_Q4_Q1': float(Total_Ct_Chng_Q4_Q1), 'Total_Relationship_Count': int(Total_Relationship_Count), 'Total_Amt_Chng_Q4_Q1': float(Total_Amt_Chng_Q4_Q1),
                 'Avg_Utilization_Ratio': float(Avg_Utilization_Ratio), 'Credit_Limit': float(Credit_Limit), 'Avg_Open_To_Buy': float(Avg_Open_To_Buy), 'Months_Inactive_12_mon': int(Months_Inactive_12_mon),
