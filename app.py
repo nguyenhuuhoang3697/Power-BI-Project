@@ -21,7 +21,7 @@ def main():
 
     Customer_Age = st.text_input("Customer Age","0")
     Income_Category = st.selectbox("Income Category", ['$120K +', '$40K - $60K', '$60K - $80K', '$80K - $120K', 'Less than $40K'])
-    Education_Level = st.selectbox("Education Level",['College', 'Doctorate', 'Graduate', 'High School', 'Post-Graduate', 'Uneducated', 'Unknown'])
+    Education_Level = st.selectbox("Education Level",['College', 'Doctorate', 'Graduate', 'High School', 'Post-Graduate', 'Uneducated'])
     Marital_Status = st.selectbox("Marital Status",['Divorced', 'Married', 'Single'])
     Gender = st.selectbox("Gender",['F', 'M'])
     Card_Category = st.selectbox("Card Category",['Blue', 'Gold', 'Platinum', 'Silver'])
