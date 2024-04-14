@@ -11,7 +11,7 @@ cols=['Customer_Age','Income_Category','Education_Level','Marital_Status','Gende
       'Dependent_count']
 
 def main():
-    st.title("Churn Predictor")
+    st.title("KnowName Bank Joint Stock Company")
     html_temp = """
     <div style="background:#025246 ;padding:10px">
     <h2 style="color:white;text-align:center;">Churn Prediction App </h2>
